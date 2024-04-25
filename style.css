@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Platypi:ital,wght@0,300..800;1,300..800&family=Sedan:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #9fc552;
+    background-color:  white;
+}
+.topo{
+    background-image: url(imagens/header\ 2.jpg);
+    background-position: 50% 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color:#393c34;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    background-color:#d3f492;
+    text-decoration: none;
+}
+.nav-item {
+    font-size: 18px;
+    padding: 6px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-item:hover {
+    background-color: rgb(107, 137, 113);
+}
+.text {
+    text-align: center;
+    margin-bottom: 10px;
+    font: 400 22px "Anton";
+    background-color: #393c34;
+
+}
+.text-large {
+    font: 400 24px "Sedan";
+    text-align: center;
+    color: #393c34;
+    margin-bottom: 12px;;
+}
