@@ -8,6 +8,13 @@ body{
     color: #9fc552;
     background-color:  white;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #393c34;
+}
 .topo{
     background-image: url(imagens/header.jpg);
     background-position: 50% 40%;
@@ -15,9 +22,16 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.zoom{
+    width: 150px;
+    height: 150px;
+}
 .link{
     text-decoration: none;
     color:#393c34;
+}
+.nav-container{
+    width: 100%;
 }
 .menu {
     display: flex;
@@ -31,9 +45,11 @@ body{
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
+    color: #2c3a0f;
+    cursor: pointer;
 }
 .nav-item:hover {
-    background-color: rgb(107, 137, 113);
+    background-color: rgb(107, 137, 113,0.3);
 }
 .text {
     text-align: center;
@@ -85,3 +101,25 @@ body{
     font-size: 15px;
     background-color: #393c34;
 }
+/*NAV SUB ITENS=================*/
+.sub-itens{
+    display: none;
+    background-color: azure;
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+}
+.nav-item:hover .sub-itens{
+    display: block;
+}
+.sub-itens li{
+    margin-bottom: 5px;
+}
+.sub-itens a{
+    color: #2c3a0f;
+    text-decoration: none;
+}
+.sub-itens a:hover{
+    background-color: rgba(0, 0, 0, 0.055);
+}
+/*==============================*/
