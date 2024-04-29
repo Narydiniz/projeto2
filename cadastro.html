@@ -47,7 +47,47 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-register">
+        <legend class="legend-register">Cadastro</legend>
+        <fieldset class="fieldset-register">
+        
+        <form>
+            <label class="label-register">
+                <p class="p-register">Nome</p> 
+                <input class="input-register" type="text" class="cadastro" verified>
+            </label>
+
+            <label  class="label-register">
+                <p class="p-register">Sobrenome</p>
+                <input class="input-register" type="text" class="cadastro">
+            </label>
+
+            <label class="label-register">
+                <p class="p-register">Sexo</p>
+                <p><label><input id="masculino" name="masculino-feminino" type="radio" class="cadastro" value="masculino" checked>Masculino</label></p>
+                <p><label><input id="feminino" name="masculino-feminino" type="radio" class="cadastro" value="feminino">Feminino</label></p>
+            </label>
+
+            <label class="label-register">
+                <p class="p-register">E-mail</p>
+                <input class="input-register" type="email" class="cadastro">
+            </label>
+
+            <label class="label-register">
+                <p class="p-register">Senha</p>
+                <input class="input-register" type="password">
+            </label>
+
+            <label class="label-register">
+                <p class="p-register">Confirme sua Senha</p>
+                <input class="input-register" type="password">
+            </label>
+            <div class="button-register-container">
+                <button class="button-confirm-register">Criar Conta</button>
+            </div>
+            
+        </form>
+    </fieldset>
     </main>
 
 <footer>
