@@ -236,3 +236,13 @@ a{
     background-color: rgba(0, 0, 0, 0.055);
 }
 /*==============================*/
+.produto-img{
+    height: 350px;
+    height: 350px;
+}
+.corpo {
+    display: inline grid;
+}
+.produto-conteiner{ 
+    display: flex;
+}
