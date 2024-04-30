@@ -209,10 +209,44 @@ a{
 /* MOD - FOOTER  ==========*/
 
 .footer{
-    text-align: center;
     font-size: 15px;
     background-color: #393c34;
+    color:#8BA55C;
 }
+
+.img-footer{
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+}
+.container{
+    display: flex;
+    color: white;
+    margin-left: 12px;
+     
+}
+footer.container ul {
+    width: 25%;
+    margin-left: 12px;
+    
+}
+footer.container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+    margin-left: 12px;
+}
+.footer-text{
+    margin-bottom: 40px;
+    margin-right: 12px;
+  
+}
+footer.container li{
+    margin: 10px 0;
+}
+footer.container a{
+    color: white;
+}
+
 
 /*NAV SUB ITENS=================*/
 .sub-itens{
