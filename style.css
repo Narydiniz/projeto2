@@ -275,6 +275,12 @@ a{
     width: 40px;
     height: 40px;
 }
+.redes-sociais{
+    display: flex;
+    text-decoration: none;
+    margin-top: 30px;
+   
+}
 /*NAV SUB ITENS=================*/
 .sub-itens{
     display: none;
@@ -298,12 +304,24 @@ a{
 }
 /*==============================*/
 .produto-img{
-    height: 350px;
-    height: 350px;
+    max-width: 100%;
+    max-height: 100%;
 }
 .corpo {
-    display: inline grid;
+    display:block; 
+     
 }
 .produto-conteiner{ 
-    display: flex;
+    /*display: inline-flexbox;*/
+    columns: 4;
+    font-size: 22px;
+    /* grid-template-columns: max-content;*/
+    flex: 1 1 100vw;
+}
+.nome-produto{
+    font-size: 12px;
+}
+.preço-produto{
+    font-size: 20px;
+    color: #393c34;
 }
