@@ -90,16 +90,24 @@ a{
     margin-left: 12px;
 }
 
-/* MOD - MAIN  =======*/
+/* ======== MOD - MAIN  =======*/
+
+
+.banner-container{
+}
+.banner{
+    box-shadow: 0px 1px 2px black;
+    width: 100%;
+    
+    margin: auto;
+}
+
 .main-cupom{
     background-image: url(imagens/teste-banner.gif);
 }
 .title-container{
     font-size: 25px;
     color: var(--button-background-color);
-}
-.line-horizontal-title{
-
 }
 .evidence {
     display: grid;
@@ -109,7 +117,6 @@ a{
     text-align: left;
     margin-bottom: 10px;
     font: 400 22px "Anton";
-    margin-left: 12px;
     background-color: #2c3a0f;
 }
 
@@ -117,22 +124,26 @@ a{
     max-width: 100%;
     max-height: 100%;
 }
-.corpo {
+.corpo{
     display: flex;
 }
-.product-container{
-    display: flex;
-    flex-wrap: wrap;
+.product-container ,.index-container{
+    width: 75%;
+    margin: auto;
 }
 .product{
     background-color: white;
     margin: 7px;
-    text-align: start;
-    box-shadow: 3px 3px 3px #12490270
+    text-align: center;
+    box-shadow: 3px 3px 3px #12490270;
+    border-radius: 13px;
+}
+.information-buy-container{
+    margin: 0px 5px;
 }
 .product-name{
-    font-size: 12px "Noto+Sans";
-    height: auto;
+    justify-content: start;
+    font-size: 12px;
 }
 
 .product-price{
@@ -145,14 +156,13 @@ a{
 }
 .image-description{
     display: flex;
-    margin: 6px 12px;
 }
 .description{
     color: black;
     border-style: solid;
     border-color: var(--border-description);
     font-size: 24px;
-    width: 65%;
+    width: 100%;
     display: flex;
     background-color: var(--fundo);
 }
@@ -173,7 +183,7 @@ a{
     border-style: solid;
     border-color: #6B8E23;
     float: inherit;  
-    margin: 5px 12px;
+    margin: 10px 0px;
 }
 .button-index:hover{
     background-color: #2c3a0f;
