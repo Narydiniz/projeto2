@@ -8,6 +8,12 @@
     <title>Empório Natural</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/oliveira.ico" type="image/x-icon">
+    <style>
+        .navegacao{
+            background-color: var(#2c3a0f);
+            text-align: center;
+        }
+    </style>
 
 </head>
 
@@ -18,27 +24,12 @@
         </div>
         <nav>
             <ul class="menu">
-                <li class="nav-item">  produtos
-                    <ul class="sub-itens">
-                        <li><a href="suplementos.html">Creatina</a></li>  
-                        <li ><a href="suplementos.html">Whey</a></li>
-                        <li><a href="suplementos.html">Cafeina</a></li>  
-                        <li ><a href="alimentos.html">Barrinhas</a></li>
-                        <li ><a href="alimentos.html">Geleias</a></li>
-                        <li><a href="alimentos.html">Temperos</a></li>  
-                        <li ><a href="beleza.html">Oléos</a></li>
-                        <li><a href="beleza.html">Sabonetes</a></li>  
-                        <li ><a href="beleza.html">Mascaras</a></li>
-                        <li><a href="relaxamento.html">Chás</a></li>  
-                        <li ><a href="relaxamento.html">Melatonina</a></li>
-                        <li><a href="relaxamento.html">Magnesio</a></li> 
-                    </ul>
+
+                <li id="cart" class="nav-item" onclick="cart()">
+                    Carrinho
                 </li>
                 <li class="nav-item">
                     <a class="link" href="cupons.html">Cupons</a>
-                </li>
-                <li class="nav-item">
-                   <a class="link"  href="carrinho.html"> Carrinho</a>
                 </li>
                 <li class="nav-item">
                     <a class="link" href="login.html">Login</a>
@@ -46,230 +37,238 @@
             </ul>
         </nav>
     </header>
-
-    <main  class="product-container">
-        <div class="title-container">
-            <h2 class="title-products">Creatina</h2>
+    <main id="product-container" class="product-container">
+        <div class="navegacao">
+            <nav>
+                <input type="button" value="Suplementos" onclick="clicars()">
+                <input type="button" value="Alimentação" onclick="clicara()">
+                <input type="button" value="Relaxamento" onclick="clicarr()">
+                <input type="button" value="Beleza" onclick="clicarb()">
+            </nav>
         </div>
-        
-        <section class="corpo">
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup1.png" alt="CREATINA MONOHIDRATADA ">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">CREATINA MONOHIDRATADA <br> POTE 300G </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 139,31</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+        <div id="suplemento">
+            <div class="title-container">
+                <h2 class="title-products">Creatina</h2>
+            </div>
+            <section name="section" id="section" class="corpo">
+                    <div id="product" class="product">
+                        <img class="produto-img" src="img-suplementos/Sup1.png" alt="CREATINA MONOHIDRATADA ">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">CREATINA MONOHIDRATADA <br> POTE 300G </strong>
                         </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup2.png" alt="CREATINA (100% CREAPURE®) ">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">CREATINA (100% CREAPURE®) <br> POTE 300G  </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 279,56</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup3.png" alt="GLUTAMINA ">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">GLUTAMINA <br>300 G </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 72,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup4.png" alt="INTRA WORKOUT ">    
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">INTRA WORKOUT<br>700G  </strong>    
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 174,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        
-        <div class="title-container">
-            <h2 class="title-products">Whey</h2>
-        </div>
-
-        <section class="corpo">
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup6.png" alt="FRESHWHEY™ SACHÊ">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">FRESHWHEY™-29g <br> ... </strong>
-                    </div>
-                    <div class="teste">
                             <div class="price-container">
-                                <span class="product-price">R$ 11,12</span>
+                                <span class="product-price">R$ 139,31</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup2.png" alt="CREATINA (100% CREAPURE®) ">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">CREATINA (100% CREAPURE®) <br> POTE 300G  </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 279,56</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup3.png" alt="GLUTAMINA ">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">GLUTAMINA <br>300 G </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 72,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup4.png" alt="INTRA WORKOUT ">    
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">INTRA WORKOUT<br>700G  </strong>    
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 174,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            
+            <div class="title-container">
+                <h2 class="title-products">Whey</h2>
+            </div>
+
+            <section class="corpo">
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup6.png" alt="FRESHWHEY™ SACHÊ">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">FRESHWHEY™-29g <br> ... </strong>
+                        </div>
+                        <div class="teste">
+                                <div class="price-container">
+                                    <span class="product-price">R$ 11,12</span>
+                                    <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                </div>
+                                <div class="button-container">
+                                <button class="button">Comprar</button>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup5.png" alt="WHEY PROTEIN SHAK">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">WHEY PROTEIN SHAKE-250ML <br>... </strong>
+                        </div>
+                        <div class="teste">
+                                <div class="price-container">
+                                    <span class="product-price">R$ 30,10</span>
+                                    <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                </div>
+                                <div class="button-container">
+                                <button class="button">Comprar</button>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup7.png" alt="FRESHWHEY™ FRUTAS VERMELHAS">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">FRESHWHEY™ FRUTAS VERMELHAS ... </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 229,90</span>
                                 <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
                             <button class="button">Comprar</button>
                             </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
 
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup5.png" alt="WHEY PROTEIN SHAK">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">WHEY PROTEIN SHAKE-250ML <br>... </strong>
-                    </div>
-                    <div class="teste">
+
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup8.png" alt="WHEY PROTEIN CONCENTRADO">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">WHEY PROTEIN CONCENTRADO 900G ... </strong>
+                        </div>
                             <div class="price-container">
-                                <span class="product-price">R$ 30,10</span>
+                                <span class="product-price">R$ 298,70</span>
                                 <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
                             <button class="button">Comprar</button>
                             </div>
-                    </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup7.png" alt="FRESHWHEY™ FRUTAS VERMELHAS">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">FRESHWHEY™ FRUTAS VERMELHAS ... </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 229,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                        <button class="button">Comprar</button>
                         </div>
                     </div>
-                </div>
 
+            </section>
 
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup8.png" alt="WHEY PROTEIN CONCENTRADO">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">WHEY PROTEIN CONCENTRADO 900G ... </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 298,70</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+            <div class="title-container">
+                <h2 class="title-products">Cafeína</h2>
+            </div>
+            
+            <section class="corpo">
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup9.png" alt="ENERGY KICK CAFFEINE">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">ENERGY KICK CAFFEINE ... </strong>
                         </div>
-                        <div class="button-container">
-                        <button class="button">Comprar</button>
+                            <div class="price-container">
+                                <span class="product-price">R$ 147,71</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                            <button class="button">Comprar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-        </section>
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup10.png" alt="ENERGY GEL COM CAFEÍNA">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">ENERGY GEL COM CAFEÍNA ... </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 127,71</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                            <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="title-container">
-            <h2 class="title-products">Cafeína</h2>
+
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup11.png" alt="ENERGY KICK CAFFEINE">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">ENERGY KICK CAFFEINE ... </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 15,12</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                            <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-suplementos/Sup12.png" alt="CAFEÍNA">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">CAFEÍNA - POTE 30 CÁPSULAS </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 42,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                            <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
         </div>
-        
-        <section class="corpo">
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup9.png" alt="ENERGY KICK CAFFEINE">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">ENERGY KICK CAFFEINE ... </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 147,71</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                        <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup10.png" alt="ENERGY GEL COM CAFEÍNA">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">ENERGY GEL COM CAFEÍNA ... </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 127,71</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                        <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup11.png" alt="ENERGY KICK CAFFEINE">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">ENERGY KICK CAFFEINE ... </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 15,12</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                        <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-suplementos/Sup12.png" alt="CAFEÍNA">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">CAFEÍNA - POTE 30 CÁPSULAS </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 42,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                        <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-        </section>
-
+    <div id="alimentos">
         <div class="title-container">
             <h2 class="title-products">Barrinhas</h2>
         </div>
@@ -486,12 +485,13 @@
                     </div>
                 </div>
         </section>
-        
+    </div>
+    <div id="beleza">
         <div class="title-container">
             <h2 class="title-products">Oléos</h2>
         </div>
 
-        <section class="corpo">
+        <section  class="corpo">
             <div class="product">
                 <img class="produto-img"  src="img-beleza/Blx1.png" alt="Óleo de Copaíba ">
                 <div class="information-buy-container">
@@ -505,7 +505,7 @@
                         <div class="button-container">
                             <button class="button" type="button">Comprar</button>
                         </div>
-                    </div>div>
+                    </div>
                 </div>
 
                 <div class="product">
@@ -557,11 +557,11 @@
                         </div>
                     </div>
                 </div>
-      </section>
-
-      <div class="title-container">
-        <h2 class="title-products">Sabonetes</h2>
-    </div>
+        </section>
+    
+        <div class="title-container">
+            <h2 class="title-products">Sabonetes</h2>
+        </div>
 
         <section class="corpo">
             <div class="product">
@@ -577,7 +577,7 @@
                         <div class="button-container">
                             <button class="button" type="button">Comprar</button>
                         </div>
-                    </div>div>
+                    </div>
                 </div>
 
                 <div class="product">
@@ -630,303 +630,314 @@
                     </div>
                 </div>
 
-        </section>
+            </section>
 
-        <div class="title-container">
-            <h2 class="title-products">Mascaras</h2>
-        </div>
-
-        <section class="corpo">
-            <div class="product">
-                
-                <img class="produto-img" src="img-beleza/Blx9.png" alt="Máscara Facial Detox Peel Off">
-                <div class="information-buy-container">
-                <div class="product-description">
-                    <strong class="nome-produto">Máscara Facial Detox Peel Off - 8g...</strong>
-                </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 3,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
-                        </div>
-                    </div>div>
+                <div class="title-container">
+                    <h2 class="title-products">Mascaras</h2>
                 </div>
 
+            <section class="corpo">
                 <div class="product">
-                    <img class="produto-img" src="img-beleza//Blx10.png" alt="Máscara Facial Fresh Tea Tree ">
+                    
+                    <img class="produto-img" src="img-beleza/Blx9.png" alt="Máscara Facial Detox Peel Off">
                     <div class="information-buy-container">
                     <div class="product-description">
-                        <strong>Máscara Facial Fresh Tea Tree - 25g...</strong>
+                        <strong class="nome-produto">Máscara Facial Detox Peel Off - 8g...</strong>
                     </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 5,50</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
-                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 3,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button" type="button">Comprar</button>
+                            </div>
+                        </div>div>
                     </div>
-                </div>
 
-
-                <div class="product">
-                    <img class="produto-img" src="img-beleza//Blx11.png" alt="Máscara Facial de Rosa Mosqueta">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="nome-produto">Máscara Facial de Rosa Mosqueta...</strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 8,70</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                    <div class="product">
+                        <img class="produto-img" src="img-beleza//Blx10.png" alt="Máscara Facial Fresh Tea Tree ">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong>Máscara Facial Fresh Tea Tree - 25g...</strong>
                         </div>
-                        <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-beleza//Blx12.png" alt="Máscara Facial Bee natural">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="nome-produto">Máscara Facial Bee natural...</strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 6,50</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <div class="price-container">
+                                <span class="product-price">R$ 5,50</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button" type="button">Comprar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-        </section>
 
-        <div class="title-container">
-            <h2 class="title-products">Chás</h2>
-        </div>
+                    <div class="product">
+                        <img class="produto-img" src="img-beleza//Blx11.png" alt="Máscara Facial de Rosa Mosqueta">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="nome-produto">Máscara Facial de Rosa Mosqueta...</strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 8,70</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button" type="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-beleza//Blx12.png" alt="Máscara Facial Bee natural">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="nome-produto">Máscara Facial Bee natural...</strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 6,50</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button" type="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+    </div>
+    <div id="relaxamento">
+            <div class="title-container">
+                <h2 class="title-products">Chás</h2>
+            </div>
+            
+            <section  class="corpo">
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx1.png" alt="Chá Orgânico Acalma a Alma">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">CHÁ ORGÂNICO ACALMA A ALMA </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 36,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx2.png" alt="Chá Orgânico Camomila">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">CHÁ ORGÂNICO CAMOMILA </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 30,20</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx3.png" alt="Chá Orgânico Bons Sonhos">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">CHÁ ORGÂNICO BONS SONHOS </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 32,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx4.png" alt="Chá Orgânico Curumim Lua">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">CHÁ ORGÂNICO CURUMIM LUA  </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 32,60</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+
         
-        <section class="corpo">
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx1.png" alt="Chá Orgânico Acalma a Alma">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">CHÁ ORGÂNICO ACALMA A ALMA </strong>
+            <div class="title-container">
+                <h2 class="title-products">MELATONINA</h2>
+            </div>
+
+            <section class="corpo">
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx5.png" alt="Night Calm Liquida Maracujá">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">NIGHT CALM LIQUIDA MARACUJÁ MELATONINA  </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 39,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 36,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+1
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx6.png" alt="MAGNÉSIO+TRIPTOFANO+VITAMINAS B eB9">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">NIGHT CALM COMPLEX MELATONINA  </strong>
                         </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <div class="price-container">
+                                <span class="product-price">R$ 45,30</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
                         </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx7.png" alt="Cápsulas + VITAMINA B6">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">TRI MAGNÉSIO INOSITOL  </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 69,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx8.png" alt="Limão + Triptofano + Vitamina B6">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">TRI MAGNÉSIO INOSITOL LIMÃO  </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 119,10</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                        </div>
+                    <div class="button-container">
+                        <button class="button">Comprar</button>
                     </div>
                 </div>
+            </div>
 
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx2.png" alt="Chá Orgânico Camomila">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">CHÁ ORGÂNICO CAMOMILA </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 30,20</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+            </section>
+            
+            
+            <div class="title-container">
+            <h2 class="title-products">VITAMINAS</h2>
+            </div>
+            <section class="corpo">
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx9.png" alt="VITAMINA D">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">LAVITAN VITAMINA D COMP REV... </strong>
                         </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx3.png" alt="Chá Orgânico Bons Sonhos">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">CHÁ ORGÂNICO BONS SONHOS </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 32,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <div class="price-container">
+                                <span class="product-price">R$ 16,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx4.png" alt="Chá Orgânico Curumim Lua">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">CHÁ ORGÂNICO CURUMIM LUA  </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 32,60</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx13.png" alt="VITAMINA D">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">LAVITAN SUPLEMENTO VITAMINICO MINERAL</strong>
                         </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <div class="price-container">
+                                <span class="product-price">R$ 16,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx11.png" alt="COLAGENO TIPO II">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">LAVITAN COLAGENO TIPO II 2 BL X 15 CAPS </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 42,90</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
 
-        </section>>
-        <br>
 
+                    <div class="product">
+                        <img class="produto-img" src="img-relaxamento/Relx12.png" alt="CALCIO + D1000UI">
+                        <div class="information-buy-container">
+                        <div class="product-description">
+                            <strong class="product-name">LAVITAN CALCIO COMP REV ... </strong>
+                        </div>
+                            <div class="price-container">
+                                <span class="product-price">R$ 31,10</span>
+                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="button" >Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </main>
+        
+        <div class="main-cart-container">
+            <span class="no-product-cart">Seu carrinho está vazio!</span>
 
-        <div class="title-container">
-            <h2 class="title-products">MELATONINA</h2>
+            <div class="button-container">
+                <button id="compras" class="shopping-button" onclick="ircompras()">Ir as compras</button>
+            </div>
+            
         </div>
+        <div >
 
-    <section class="corpo">
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx5.png" alt="Night Calm Liquida Maracujá">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">NIGHT CALM LIQUIDA MARACUJÁ MELATONINA  </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 39,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx6.png" alt="MAGNÉSIO+TRIPTOFANO+VITAMINAS B eB9">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">NIGHT CALM COMPLEX MELATONINA  </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 45,30</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx7.png" alt="Cápsulas + VITAMINA B6">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">TRI MAGNÉSIO INOSITOL  </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 69,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx8.png" alt="Limão + Triptofano + Vitamina B6">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">TRI MAGNÉSIO INOSITOL LIMÃO  </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 119,10</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-        </section>
-        <br>
-        <div class="title-container">
-            <h2 class="title-products">VITAMINAS></h2>
         </div>
-
-        <section class="corpo">
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx9.png" alt="VITAMINA D">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">LAVITAN VITAMINA D COMP REV... </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 16,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx13.png" alt="VITAMINA D">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">LAVITAN SUPLEMENTO VITAMINICO MINERAL</strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 16,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx11.png" alt="COLAGENO TIPO II">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">LAVITAN COLAGENO TIPO II 2 BL X 15 CAPS </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 42,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <img class="produto-img" src="img-relaxamento/Relx12.png" alt="CALCIO + D1000UI">
-                    <div class="information-buy-container">
-                    <div class="product-description">
-                        <strong class="product-name">LAVITAN CALCIO COMP REV ... </strong>
-                    </div>
-                        <div class="price-container">
-                            <span class="product-price">R$ 31,10</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button" >Comprar</button>
-                        </div>
-                    </div>
-                </div>
-
-        </section>
-
-    </main>
-
     <footer class="footer">
         <div class="footer-container">
             <ul>
@@ -990,15 +1001,16 @@
             </ul>
             <ul class="footer-list-card">
                 <h3>Dividimos em até 10x no Cartão<br><hr class="line-horizontal"></h3>
-                    <div class="img-card-container">
-                        <img class="card" src="imagens/visa.svg"  alt="visa">
-                        <img class="card" src="imagens/mastercard.svg" alt="mastercard">
-                        <img class="card" src="imagens/elo.svg" alt="elo">
+                <div class="img-card-container">
+                    <img class="card" src="imagens/visa.svg"  alt="visa">
+                    <img class="card" src="imagens/mastercard.svg" alt="mastercard">
+                    <img class="card" src="imagens/elo.svg" alt="elo">
                         <img class="card" src="imagens/pix.svg" alt="pix">
                         <img class="card" src="imagens/boleto.svg" alt="boleto">
                     </div>
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
