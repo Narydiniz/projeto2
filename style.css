@@ -77,6 +77,7 @@ a{
     list-style: none;
     background-color:#d3f492;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 .nav-item {
     font-size: 18px;
@@ -107,6 +108,24 @@ a{
 
 /* ======== MOD - MAIN  =======*/
 
+.navegacao{
+    width: 50%;
+    margin: 10px 1px;
+    margin: auto;
+}
+#button-products-nav{
+    color: #000000;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: 1px solid var(--background-header2);
+    box-shadow: 1px 3px 0px 0px black;
+}
+#button-products-nav:hover{
+    background-color: var(--button-background-color-hover);
+    color: white;
+}
 .banner{
     box-shadow: 0px 1px 2px black;
     width: 100%;
@@ -128,7 +147,7 @@ a{
     max-height: 100%;
 }
 .corpo{
-    display: flex;
+    display: block;
 }
 .product-container ,.index-container ,.main-about{
     width: 75%;
@@ -261,6 +280,10 @@ a{
 .main-cart-container{
     text-align: center;
 }
+.main-cart-container-sumir{
+    text-align: center;
+    display: none;
+}
 .no-product-cart{
     color: var(--button-background-color);
     font: 400 15px "Anton";
@@ -280,6 +303,21 @@ a{
     display: flex;
     margin: 30px 0px
 }
+#produtos-no-carrinho{
+    width: 50%;
+    margin: auto;
+}
+#produto-do-carrinho{
+    background-color: white;
+    text-align: center;
+    box-shadow: 3px 3px 3px #12490270;
+    border-radius: 13px;
+}
+#imagem-no-carrinho{
+    max-width: 40%;
+    max-height: 100%;
+}
+
 /* MOD - FOOTER  ==========*/
 
 .footer{
@@ -291,7 +329,7 @@ a{
 .img-footer{
     width: 30px;
     height: 30px;
-    margin-left: 10px;
+    
 }
 .footer-container{
     display: flex;
@@ -314,6 +352,9 @@ a{
 }
 .footer-container li{
     margin: 6px 20px;
+}
+.midias{
+    margin-right: 12px;
 }
 .footer-container a{
     color: white;
@@ -355,7 +396,6 @@ a{
     display: flex;
     text-decoration: none;
     margin-top: 30px;
-   
 }
 
 /*==========Index===========*/
@@ -468,3 +508,4 @@ a{
         font-size: 0%;
     }
 }
+

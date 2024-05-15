@@ -5,33 +5,38 @@ var relaxamentos = document.getElementById('relaxamento')
 var vitaminas = document.querySelector('div#vitaminas')
 var carrinho = document.getElementById('cart')
 var compras = document.getElementById('compras')
-var infoCart = document.getElementsByClassName('main-cart-container')[0]
+var infoCart = document.getElementsByClassName('main-cart-container-sumir')[0]
+var nav = document.getElementsByClassName('navegacao')[0]
 function clicars(){
     suplementos.style.display = 'block'
     relaxamentos.style.display = 'none'
     belezas.style.display = 'none'
     alimento.style.display = 'none'
+    infoCart.style.display = 'none'
 }
 function clicara(){
-    suplementos.style.display = 'none'
-    relaxamentos.style.display = 'block'
-    belezas.style.display = 'none'
-    alimento.style.display = 'none'
-    carrinho.style.display = 'block'
-}
-function clicarr(){
-    suplementos.style.display = 'none'
-    relaxamentos.style.display = 'none'
-    belezas.style.display = 'block'
-    alimento.style.display = 'none'
-    carrinho.style.display = 'block'
-}
-function clicarb(){
     suplementos.style.display = 'none'
     relaxamentos.style.display = 'none'
     belezas.style.display = 'none'
     alimento.style.display = 'block'
     carrinho.style.display = 'block'
+    infoCart.style.display = 'none'
+}
+function clicarr(){
+    suplementos.style.display = 'none'
+    relaxamentos.style.display = 'block'
+    belezas.style.display = 'none'
+    alimento.style.display = 'none'
+    carrinho.style.display = 'block'
+    infoCart.style.display = 'none'
+}
+function clicarb(){
+    suplementos.style.display = 'none'
+    relaxamentos.style.display = 'none'
+    belezas.style.display = 'block'
+    alimento.style.display = 'none'
+    carrinho.style.display = 'block'
+    infoCart.style.display = 'none'
 }
 function cart(){
     suplementos.style.display = 'none'
@@ -40,6 +45,7 @@ function cart(){
     alimento.style.display = 'none'
     carrinho.style.display = 'block'
     infoCart.style.display = 'block'
+    nav.style.display = 'none'
 }
 function ircompras(){
     suplementos.style.display = 'block'
@@ -48,6 +54,7 @@ function ircompras(){
     alimento.style.display = 'block'
     carrinho.style.display = 'block'
     infoCart.style.display = 'none'
+    nav.style.display = 'block'
 }
 let count = 1;
 document.getElementById("radio1").checked = true;

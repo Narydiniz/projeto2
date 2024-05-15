@@ -24,7 +24,6 @@
         </div>
         <nav>
             <ul class="menu">
-
                 <li id="cart" class="nav-item" onclick="cart()">
                     Carrinho
                 </li>
@@ -34,38 +33,44 @@
                 <li class="nav-item">
                     <a class="link" href="login.html">Login</a>
                 </li>
+                <li class="nav-item">
+                    <a class="link" href="sobre.html">Sobre</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main id="product-container" class="product-container">
         <div class="navegacao">
-            <nav>
-                <input type="button" value="Suplementos" onclick="clicars()">
-                <input type="button" value="Alimentação" onclick="clicara()">
-                <input type="button" value="Relaxamento" onclick="clicarr()">
-                <input type="button" value="Beleza" onclick="clicarb()">
+            <nav class="box-products-nav">
+                <input id="button-products-nav" type="button" value="Suplementos" onclick="clicars()">
+                <input id="button-products-nav" type="button" value="Alimentação" onclick="clicara()">
+                <input id="button-products-nav" type="button" value="Relaxamento" onclick="clicarr()">
+                <input id="button-products-nav" type="button" value="Beleza" onclick="clicarb()">
             </nav>
         </div>
         <div id="suplemento">
             <div class="title-container">
                 <h2 class="title-products">Creatina</h2>
             </div>
+
             <section name="section" id="section" class="corpo">
                     <div id="product" class="product">
-                        <img class="produto-img" src="img-suplementos/Sup1.png" alt="CREATINA MONOHIDRATADA ">
-                        <div class="information-buy-container">
-                        <div class="product-description">
-                            <strong class="product-name">CREATINA MONOHIDRATADA <br> POTE 300G </strong>
-                        </div>
-                            <div class="price-container">
-                                <span class="product-price">R$ 139,31</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <img class="produto-img" src="img-suplementos/Sup1.png" alt="CREATINA MONOHIDRATADA ">
+                            <div class="information-buy-container">
+                            <div class="product-description">
+                                <strong class="product-name">CREATINA MONOHIDRATADA <br> POTE 300G </strong>
                             </div>
-                            <div class="button-container">
-                                <button class="button">Comprar</button>
-                            </div>
+                                <div class="price-container">
+                                    <span class="product-price">R$ 139,31</span>
+                                    <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
+                                </div>
+                                <div class="button-container">
+                                    <button class="button">Adicionar ao Carrinho</button>
+                                </div>
+
                         </div>
-                    </div>
+                        </div>
+                        
 
                     <div class="product">
                         <img class="produto-img" src="img-suplementos/Sup2.png" alt="CREATINA (100% CREAPURE®) ">
@@ -75,10 +80,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 279,56</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -92,10 +97,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 72,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -109,10 +114,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 174,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -127,15 +132,15 @@
                         <img class="produto-img" src="img-suplementos/Sup6.png" alt="FRESHWHEY™ SACHÊ">
                         <div class="information-buy-container">
                         <div class="product-description">
-                            <strong class="product-name">FRESHWHEY™-29g <br> ... </strong>
+                            <strong class="product-name">FRESHWHEY™-29G <br> ... </strong>
                         </div>
                         <div class="teste">
                                 <div class="price-container">
                                     <span class="product-price">R$ 11,12</span>
-                                    <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                    <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                                 </div>
                                 <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                                 </div>
                         </div>
                         </div>
@@ -150,10 +155,10 @@
                         <div class="teste">
                                 <div class="price-container">
                                     <span class="product-price">R$ 30,10</span>
-                                    <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                    <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                                 </div>
                                 <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                                 </div>
                         </div>
                         </div>
@@ -168,10 +173,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 229,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -185,10 +190,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 298,70</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -208,10 +213,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 147,71</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -224,10 +229,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 127,71</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -241,10 +246,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 15,12</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -258,10 +263,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 42,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                            <button class="button">Comprar</button>
+                            <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -283,10 +288,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price"> R$ 1,99 </span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                        <button class="button" type="button">Comprar</button>
+                        <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -299,10 +304,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 1,99</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                        <button class="button" type="button">Comprar</button>
+                        <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -315,10 +320,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 43,10</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                        <button class="button" type="button">Comprar</button>
+                        <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -331,10 +336,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 43,10</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                        <button class="button" type="button">Comprar</button>
+                        <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -354,10 +359,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price"> R$ 22,50</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -370,10 +375,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price"> R$ 23,50</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -387,10 +392,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price"> R$ 20,25</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -404,10 +409,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 28,70</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -427,10 +432,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 18,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -443,10 +448,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 22,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -460,10 +465,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 21,15</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -477,10 +482,10 @@
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 21,15</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -496,14 +501,14 @@
                 <img class="produto-img"  src="img-beleza/Blx1.png" alt="Óleo de Copaíba ">
                 <div class="information-buy-container">
                 <div class="product-description">
-                    <strong class="product-name">Óleo de Copaíba 100% Puro...</strong>
+                    <strong class="product-name">ÓLEO DE COPAÍBA 100% PURO</strong>
                 </div>
                         <div class="price-container">
                             <span class="product-price">R$ 18,30</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -512,14 +517,14 @@
                     <img class="produto-img" src="img-beleza/Blx2.png" alt="Óleo de Rosa Mosqueta ">
                     <div class="information-buy-container">
                     <div class="product-description">
-                        <strong class="product-name">Óleo de Rosa Mosqueta 100%..</strong>
+                        <strong class="product-name">ÓLEO DE ROSA MOSQUETA 100%...</strong>
                     </div>
                         <div class="price-container">
                             <span class="product-price" >R$ 83,40</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -529,14 +534,14 @@
                     <img class="produto-img" src="img-beleza/Blx3.png" alt="Óleo Essencial de Eucalipto ">
                     <div class="information-buy-container">
                     <div class="product-description">
-                        <strong class="product-name"> Óleo Essencial de Eucalipto </strong>
+                        <strong class="product-name"> ÓLEO ESSENCIAL DE EUCALÍPTO </strong>
                     </div>
                         <div class="price-container">
                             <span class="product-price">34,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -546,14 +551,14 @@
                     <img class="produto-img" src="img-beleza/Blx4.png" alt="Óleo Essencial de Lavanda ">
                     <div class="information-buy-container">
                     <div class="product-description">
-                        <strong class="product-name"> Óleo Essencial deLavanda </strong>
+                        <strong class="product-name"> ÓLEO ESSENCIAL DE LAVANDA </strong>
                     </div>
                         <div class="price-container">
                             <span class="product-price">49,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -568,14 +573,14 @@
                 <img class="produto-img" src="img-beleza/Blx5.png" alt="Oil Cream Hidratante Abacate e Oliva">
                 <div class="information-buy-container">
                 <div class="product-description">
-                    <strong class="product-name">Oil Cream Hidratante Abacate...</strong>
+                    <strong class="product-name">OÍL CREAM HIDRATANTE ABACATE...</strong>
                 </div>
                         <div class="price-container">
                             <span class="product-price">R$ 119,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -584,14 +589,14 @@
                     <img class="produto-img" src="img-beleza/Blx6.png" alt="Sabonete em Barra Puro Vegetal Framboesa e Orquídea">
                     <div class="information-buy-container">
                     <div class="product-description">
-                        <strong class="product-name">Sabonete em Barra Puro Vegetal... </strong>
+                        <strong class="product-name">SABONETE EM BARRA PURO VEGETAL... </strong>
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 10,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -601,14 +606,14 @@
                     <img class="produto-img" src="img-beleza/Blx7.png" alt="Sabonete Líquido Chá Branco e Gengibre">
                     <div class="information-buy-container">
                     <div class="product-description">
-                        <strong class="product-name">Sabonete Líquido Chá Branco...</strong>
+                        <strong class="product-name">SABONETE LIQUIDO CHÁ BRANCO..</strong>
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 24,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -618,14 +623,14 @@
                     <img class="produto-img" src="img-beleza/Blx8.png" alt="Oil Cream Hidratante Framboesa e Orquídea">
                     <div class="information-buy-container">
                     <div class="product-description">
-                        <strong class="product-name">Oil Cream Hidratante Framboesa...</strong>
+                        <strong class="product-name">OÍL CREAM HIDRATANTE FRAMBOESA...</strong>
                     </div>
                         <div class="price-container">
                             <span class="product-price">R$ 199,90</span>
-                            <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                            <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" type="button">Comprar</button>
+                            <button class="button" type="button">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
@@ -642,30 +647,30 @@
                     <img class="produto-img" src="img-beleza/Blx9.png" alt="Máscara Facial Detox Peel Off">
                     <div class="information-buy-container">
                     <div class="product-description">
-                        <strong class="nome-produto">Máscara Facial Detox Peel Off - 8g...</strong>
+                        <strong class="nome-produto">MÁSCARA FACIAL DETOX PEEL OFF - 8G...</strong>
                     </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 3,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button" type="button">Comprar</button>
+                                <button class="button" type="button">Adicionar ao Carrinho</button>
                             </div>
-                        </div>div>
+                        </div>
                     </div>
 
                     <div class="product">
                         <img class="produto-img" src="img-beleza//Blx10.png" alt="Máscara Facial Fresh Tea Tree ">
                         <div class="information-buy-container">
                         <div class="product-description">
-                            <strong>Máscara Facial Fresh Tea Tree - 25g...</strong>
+                            <strong>MÁSCARA FACIAL FRESH TEA TREE - 25G...</strong>
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 5,50</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button" type="button">Comprar</button>
+                                <button class="button" type="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -675,14 +680,14 @@
                         <img class="produto-img" src="img-beleza//Blx11.png" alt="Máscara Facial de Rosa Mosqueta">
                         <div class="information-buy-container">
                         <div class="product-description">
-                            <strong class="nome-produto">Máscara Facial de Rosa Mosqueta...</strong>
+                            <strong class="nome-produto">MÁSCARA FACIAL DE ROSA MOSQUETA...</strong>
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 8,70</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button" type="button">Comprar</button>
+                                <button class="button" type="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -692,14 +697,15 @@
                         <img class="produto-img" src="img-beleza//Blx12.png" alt="Máscara Facial Bee natural">
                         <div class="information-buy-container">
                         <div class="product-description">
-                            <strong class="nome-produto">Máscara Facial Bee natural...</strong>
+                            <strong class="nome-produto">MÁSCARA FACIAL BEE NATURAL..
+                                .</strong>
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 6,50</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button" type="button">Comprar</button>
+                                <button class="button" type="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -720,10 +726,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 36,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -736,10 +742,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 30,20</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -753,10 +759,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 32,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -770,10 +776,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 32,60</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -794,10 +800,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 39,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -810,10 +816,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 45,30</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -827,10 +833,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 69,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -844,10 +850,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 119,10</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                         </div>
                     <div class="button-container">
-                        <button class="button">Comprar</button>
+                        <button class="button">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -867,10 +873,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 16,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -882,10 +888,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 16,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -898,10 +904,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 42,90</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button">Comprar</button>
+                                <button class="button">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -915,10 +921,10 @@
                         </div>
                             <div class="price-container">
                                 <span class="product-price">R$ 31,10</span>
-                                <p class="card-parcel">Até 12 vezes no cartão <br>sem juros</p>
+                                <p class="card-parcel">Até 10 vezes no cartão <br>sem juros</p>
                             </div>
                             <div class="button-container">
-                                <button class="button" >Comprar</button>
+                                <button class="button" >Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -927,7 +933,7 @@
             </div>
         </main>
         
-        <div class="main-cart-container">
+        <div class="main-cart-container-sumir">
             <span class="no-product-cart">Seu carrinho está vazio!</span>
 
             <div class="button-container">
@@ -935,31 +941,46 @@
             </div>
             
         </div>
-        <div >
-
+        <div id="produtos-no-carrinho">
+            <div id="produto-do-carrinho">
+                <div id="box-imagem-carrinho">
+                    <img id="imagem-no-carrinho" src="img-alimentos/Alim1.png" alt="">
+                </div>
+                <div id="quantidade-no-carrinho">
+                    <input id="valor-de-produtos" type="number">
+                </div>
+                <div id="descricao-no-carrinho">
+                    <strong class="product-name">Barrinha de cereal</strong>
+                </div>
+                <div id="preco-no-carrinho">
+                    valor
+                </div>
+            </div>
         </div>
     <footer class="footer">
         <div class="footer-container">
             <ul>
                 <h3>EMPÓRIO NATURAL</h3>
                 <div class="redes-sociais">
-                    <li>
+                    <li class="midias">
                         <a href="https://web.whatsapp.com/" target="_blank">
                             <img class="img-footer" src="imagens/whatsapp.svg"  alt="whatsapp" >
                         </a>
                     </li>
-                    <li>
+
+                    <li class="midias">
                         <a href="https://www.instagram.com/" target="_blank">
                              <img class="img-footer" src="imagens/instagram.png" alt="instagram">
                         </a>
                     </li>
-                   <li>
+
+                   <li class="midias">
                         <a href="https://twitter.com/?lang=pt-br" target="_blank">
                             <img class="img-footer" src="imagens/twitter.png" alt="twitter">
                         </a>
                    </li>
-                    <li>
-                        
+
+                    <li class="midias">
                         <a href="https://www.youtube.com/" target="_blank">
                             <img class="img-footer"  src="imagens/youtube.png" alt="youtube">
                         </a>
