@@ -357,27 +357,7 @@ a{
     margin-top: 30px;
    
 }
-/*========NAV SUB ITENS===========*/
-.sub-itens{
-    display: none;
-    background-color: azure;
-    position: fixed;
-    padding: 10px;
-    border-radius: 5px;
-}
-.nav-item:hover .sub-itens{
-    display: block;
-}
-.sub-itens li{
-    margin-bottom: 5px;
-}
-.sub-itens a{
-    color: #2c3a0f;
-    text-decoration: none;
-}
-.sub-itens a:hover{
-    background-color: rgba(0, 0, 0, 0.055);
-}
+
 /*==========Index===========*/
 .slider{
   margin: 0 auto;
@@ -400,15 +380,16 @@ a{
     transition: 2s;
 }
 .slides img{
-    width: 800px%;
+    width: 800px;;
+    
 }
 .manual-navigation{
     
     position: absolute;
-    width: 90%;
-    margin-top: 0px;
+    width: 800px;
+    margin-top: -40px;
     display: flex;
-    margin-left: 400px;
+    justify-content: center;
 }
 .manual-btn{
     border:2px solid var(--background-header);
@@ -435,6 +416,9 @@ a{
 #radio4:checked ~ .frist{
    margin-left: -75%;
 }
+#radio5:checked ~ .frist{
+    margin-left: -100%;
+ }
 
 .navigation-auto div{
     border: 2px solid #57895d;
@@ -454,20 +438,22 @@ a{
     margin-right: 40px;
 }
 #radio1:checked ~.navigation-auto .auto-btn1{
-    background-color: #ebf5d8;
+    background-color: #d5f1a1;
 }
 #radio2:checked ~.navigation-auto .auto-btn2{
     background-color: #ebf5d8;
 }
 #radio3:checked ~.navigation-auto .auto-btn3{
-    background-color: #ebf5d8;
+    background-color: #d5f1a1;
 }
 #radio4:checked ~.navigation-auto .auto-btn4{
-    background-color: #ebf5d8;
+    background-color: #d5f1a1;
 }
 #radio5:checked ~.navigation-auto .auto-btn5{
-    background-color: #ebf5d8;
+    background-color: #d5f1a1;
 }
+
+/*==========RESPONSIVIDADE===============*/
 @media(max-width:845px ){
     .footer-container{
         display: block;
