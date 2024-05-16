@@ -107,7 +107,6 @@ a{
 }
 
 /* ======== MOD - MAIN  =======*/
-
 .navegacao{
     width: 50%;
     margin: 10px 1px;
@@ -126,6 +125,7 @@ a{
     background-color: var(--button-background-color-hover);
     color: white;
 }
+
 .banner{
     box-shadow: 0px 1px 2px black;
     width: 100%;
@@ -147,7 +147,7 @@ a{
     max-height: 100%;
 }
 .corpo{
-    display: block;
+    display: flex;
 }
 .product-container ,.index-container ,.main-about{
     width: 75%;
@@ -159,6 +159,16 @@ a{
     text-align: center;
     box-shadow: 3px 3px 3px #12490270;
     border-radius: 13px;
+}
+.product > p {
+    display: none;
+}
+.product:hover > p{
+    display: block;
+    color: #393c34;
+    font-size: 16px;
+    justify-content: center;
+  
 }
 .information-buy-container{
     margin: 0px 5px;
@@ -280,10 +290,6 @@ a{
 .main-cart-container{
     text-align: center;
 }
-.main-cart-container-sumir{
-    text-align: center;
-    display: none;
-}
 .no-product-cart{
     color: var(--button-background-color);
     font: 400 15px "Anton";
@@ -303,21 +309,6 @@ a{
     display: flex;
     margin: 30px 0px
 }
-#produtos-no-carrinho{
-    width: 50%;
-    margin: auto;
-}
-#produto-do-carrinho{
-    background-color: white;
-    text-align: center;
-    box-shadow: 3px 3px 3px #12490270;
-    border-radius: 13px;
-}
-#imagem-no-carrinho{
-    max-width: 40%;
-    max-height: 100%;
-}
-
 /* MOD - FOOTER  ==========*/
 
 .footer{
@@ -329,7 +320,7 @@ a{
 .img-footer{
     width: 30px;
     height: 30px;
-    
+    margin-left: 10px;
 }
 .footer-container{
     display: flex;
@@ -352,9 +343,6 @@ a{
 }
 .footer-container li{
     margin: 6px 20px;
-}
-.midias{
-    margin-right: 12px;
 }
 .footer-container a{
     color: white;
@@ -396,6 +384,7 @@ a{
     display: flex;
     text-decoration: none;
     margin-top: 30px;
+   
 }
 
 /*==========Index===========*/
@@ -509,3 +498,77 @@ a{
     }
 }
 
+
+/* 
+.card {
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.card .image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h2,
+.content p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.content h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+.content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d1d1;
+  transform: translateY(50%);
+}
+.card:hover .content h2 {
+  scale: 1;
+  opacity: 1;
+}
+.card:hover .content P {
+  opacity: 1;
+  transform: translateY(0);
+}
+*/
