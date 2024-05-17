@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <div  class="topo">
+        <div class="topo">
             <a href="index.html" class="a-img-logo"><img class="zoom" src="imagens/logo2.jpg"alt="logo" height="100" width="100"></a>
         </div>
         <nav>
@@ -28,7 +28,7 @@
                    <a class="link"  href="carrinho.html"> Carrinho</a>
                 </li>
                 <li class="nav-item">
-                    <a class="link" href="login.html">Login</a>
+                    <a class="link" href="login.html">cadastro</a>
                 </li>
                 <li class="nav-item">
                     <a href="sobre.html">Sobre</a>
@@ -44,12 +44,12 @@
         <form>
             <label class="label-register">
                 <p class="p-register">Nome</p> 
-                <input class="input-register" type="text" class="cadastro" verified>
+                <input class="input-register" type="text" class="cadastro" required>
             </label>
 
             <label  class="label-register">
                 <p class="p-register">Sobrenome</p>
-                <input class="input-register" type="text" class="cadastro">
+                <input class="input-register" type="text" class="cadastro" required>
             </label>
 
             <label class="label-register">
@@ -60,17 +60,17 @@
 
             <label class="label-register">
                 <p class="p-register">E-mail</p>
-                <input class="input-register" type="email" class="cadastro">
+                <input class="input-register" type="email" class="cadastro" required>
             </label>
 
             <label class="label-register">
                 <p class="p-register">Senha</p>
-                <input class="input-register" type="password">
+                <input class="input-register" type="password" minlength="8" required>
             </label>
 
             <label class="label-register">
                 <p class="p-register">Confirme sua Senha</p>
-                <input class="input-register" type="password">
+                <input class="input-register" type="password" minlength="8" required>
             </label>
             <div class="button-register-container">
                 <button class="button-confirm-register">Criar Conta</button>
