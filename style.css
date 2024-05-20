@@ -174,10 +174,10 @@ a{
     box-shadow: 3px 3px 3px #12490270;
     border-radius: 13px;
 }
-.product > p {
+.product p {
     display: none;
 }
-.product:hover > p{
+.product:hover p{
     display: block;
     color: #393c34;
     font-size: 16px;

@@ -143,6 +143,7 @@ function clicarT(){
     buttonA.style.background = 'white'
 }
 
+//=====SLIDES DO INNDEX=====
 
 let count = 1;
 document.getElementById("radio1").checked = true;
@@ -158,6 +159,8 @@ function nextImage(){
     }
     document.getElementById("radio"+ count).checked = true;
 }
+
+//=====aLERTA DO INDEX=====
 const btnShowSweetAlert = document.querySelector('#btn-show-sweetalert');
 btnShowSweetAlert.addEventListener('click',function(){
     Swal.fire({
@@ -174,6 +177,8 @@ btnShowSweetAlert.addEventListener('click',function(){
         
       });
 })
+
+//=====ALERTA DO CUPOM=====
 function alert() {
     Swal.fire({
         position: "center",
@@ -184,8 +189,19 @@ function alert() {
       });
       
 }
+
+//=====ALERTA DO LOGIN=====
+
+function alerta() {
+    Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "ERRO! Impossivel concluir o cadastro no momento.",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      
+}
     
-
-
 
    
