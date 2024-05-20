@@ -229,6 +229,21 @@ a{
     float: inherit;  
     margin: 10px 0px;
 }
+#btn-show-sweetalert{
+    background-color: #6B8E23;
+    color: #ebf5d8;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-style: solid;
+    border-color: #6B8E23;
+    float: inherit;  
+    display: flex;
+    margin: 0 auto;
+}
+
+ .ancora{
+    background-color: #124902;
+ }   
 
 /* MOD - MENU - CADASTRO =========*/
 .main-register{
@@ -381,8 +396,13 @@ a{
 .redes-sociais{
     display: flex;
     text-decoration: none;
-    margin-top: 30px;
-   
+    margin-top: 30px; 
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:#9fc552
 }
 
 /*==========Index===========*/
@@ -407,11 +427,9 @@ a{
     transition: 2s;
 }
 .slides img{
-    width: 800px;;
-    
+    width: 800px;  
 }
-.manual-navigation{
-    
+.manual-navigation{  
     position: absolute;
     width: 800px;
     margin-top: -40px;
@@ -491,82 +509,30 @@ a{
     .topo{
         font-size: 100px;
     }
+    .slider{
+        width: 600px;
+    }
     .manual-navigation{
-        font-size: 0%;
+        width: 600px;
     }
 }
-
-
-/* 
-.card {
-  width: 400px;
-  aspect-ratio: 1 / 0.7;
-  border-radius: 8px;
-  position: relative;
-  cursor: pointer;
+@media (min-width: 375px) and (max-width: 725px){
+    .slider{
+        width: 400px;
+        height: 220px;
+    }
+    .manual-navigation{
+       display: none;
+    }
 }
-.card .image-box {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
+@media (min-width: 320px) and (max-width: 768px){
+    .corpo{
+        display: grid;
+    }
+    .footer-container{
+        font-size: 12px;
+    }
+    .text-large{
+        font-size: 12px;
+    }
 }
-.card .image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 90%;
-  border-radius: inherit;
-  transition: 0.5s ease-in-out;
-}
-
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 2px solid white;
-  border-radius: inherit;
-  opacity: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.card:hover img {
-  filter: grayscale(1) brightness(0.4);
-}
-.card:hover::after {
-  opacity: 1;
-  inset: 20px;
-}
-
-.content {
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.content h2,
-.content p {
-  opacity: 0;
-  transition: 0.4s 0.2s ease;
-}
-.content h2 {
-  margin-bottom: 12px;
-  scale: 0.7;
-}
-.content p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #d1d1d1;
-  transform: translateY(50%);
-}
-.card:hover .content h2 {
-  scale: 1;
-  opacity: 1;
-}
-.card:hover .content P {
-  opacity: 1;
-  transform: translateY(0);
-}
-*/

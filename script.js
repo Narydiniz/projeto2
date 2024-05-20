@@ -70,3 +70,19 @@ function nextImage(){
     }
     document.getElementById("radio"+ count).checked = true;
 }
+const btnShowSweetAlert = document.querySelector('#btn-show-sweetalert');
+btnShowSweetAlert.addEventListener('click',function(){
+    Swal.fire({
+        title: "Sweet!",
+        text: "Modal with a custom image.",
+        imageUrl: "imagens/Alert.png",
+        webkitURL:"produtos.html",
+        imageWidth: 400,
+        imageHeight: 200,
+        footer: '<a class="ancora" href="produtos.html">Visite nossos produtos</a>',
+        imageAlt: "Custom image"
+        
+      });
+})
+
+//https://i.im.ge/2024/05/20/KrY9KF.Alert.png
