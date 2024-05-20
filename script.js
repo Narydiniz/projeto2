@@ -174,5 +174,18 @@ btnShowSweetAlert.addEventListener('click',function(){
         
       });
 })
+function alert() {
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Cupom copiado com sucesso!",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      
+}
+    
 
-//https://i.im.ge/2024/05/20/KrY9KF.Alert.png
+
+
+   
