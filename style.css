@@ -124,20 +124,31 @@ a{
     background-color: var(--button-background-color-hover);
     color: white;
 }
-
+.banner-container {
+    text-align: center;
+}
 .banner{
     box-shadow: 0px 1px 2px black;
     width: 100%;
     margin: auto;
 }
+.banner-sobre{
+    box-shadow: 0px 1px 2px black;
+    width: 100%;
+    margin: auto;
+}
+.sobre-img-mob{
+    display: none;
+}
+
 .swal2-close{
     display: block;
 }
 
-.main-cupom{
-    display: flex;
+.main-cupom {
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
+    width: 75%;
 }
 #cupom{
     background-color: #6B8E23;
@@ -655,6 +666,14 @@ a{
     }
     .slides img{
         width: 328px;
+    }
+    .sobre-img-mob{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .banner-sobre{
+        display: none;
     }
 }
 @media (max-width: 412px) {
